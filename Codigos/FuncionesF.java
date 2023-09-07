@@ -1,4 +1,21 @@
 public class FuncionesF {
+    /*
+        Los Java Docs son una herramienta usada por muchas otras herramientas
+        y aplicaciones porque nos ayuda a documentar todo nuestro codigo usando comentarios.
+        Ademas, nos permite visualizar la docuemntacion en formato HTML
+
+        Comentarios bvarias lineas
+     * Linea 1
+     * Linea 2
+     * Linea 3
+     */
+
+        // Comentario de un linea
+
+     /**
+      * Comentario para Java Docs
+      * @param args
+      */
     public static void main(String[] args) {
         double y = 3;
         // Area de un circulo
