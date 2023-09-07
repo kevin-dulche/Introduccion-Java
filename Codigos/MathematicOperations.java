@@ -24,6 +24,9 @@ public class MathematicOperations {
         // Area de un circulo
         // PI * r^2
         System.out.println(Math.PI * Math.pow(y, 2));
+        System.out.println(Math.PI * Math.pow(5, 2));
+        System.out.println(Math.PI * Math.pow(10, 2));
+        System.out.println(Math.PI * Math.pow(1, 2));
 
         // Area de una esfera
         // 4 * PI * r^2
