@@ -2,26 +2,19 @@
 
 ## Analizar e implementar Ciclos en Java
 
-Vamos a crear el algoritmo con la lógica necesaria para encender una lampara, emitir un mensaje y detener las luces en algún momento.
+El Ciclo For también nos ayuda a ejecutar una parte de nuestro código las veces que sean necesarias para que se cumpla una condición. De hecho, el ciclo FOR nos da muchas ayudas para lograr este resultado de la forma más fácil posible:
 
-El Bucle While nos ayuda a ejecutar una parte del código mientras una condición se cumpla. Recuerda tener mucho cuidado y asegurarte de que la condición del ciclo while cambie en algún momento, de otra forma, el ciclo no se detendrá nunca y sobrecargarás tu programa:
+
 
 ```java
-while (isTurnOnLight) {
-  printSOS();
+// Estructura:
+for (inicialización; condición; incremento o decremento;) {
+  // Instrucciones
 }
-```
 
-Los operadores ternarios son otra forma de evaluar condiciones, así como los condicionales IF y ELSE`:
-
-```java
-// Operador Ternario:
-isTurnOnLight = (isTurnOnLight) ? false : true;
-
-// IF y ELSE:
-if (isTurnOnLight) {
-  isTurnOnLight = false;
-} else {
-  isTurnOnLight = true;  
+// En este ejemplo el mensaje de printSOS se
+// ejecutará 10 veces:
+for (int i = 1; i <= 10; i++) {
+  printSOS();
 }
 ```
