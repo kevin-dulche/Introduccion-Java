@@ -2,28 +2,26 @@
 
 ## Analizar e implementar Ciclos en Java
 
-Los bucles (ciclos) nos ayudan a ejecutar una parte de nuestro código una cantidad de veces hasta que se cumpla alguna condición y podamos continuar con la ejecución de nuestro código.
+Vamos a crear el algoritmo con la lógica necesaria para encender una lampara, emitir un mensaje y detener las luces en algún momento.
 
-Existen diferentes bucles. Por ejemplo, el bucle do while:
-
-
-
+El Bucle While nos ayuda a ejecutar una parte del código mientras una condición se cumpla. Recuerda tener mucho cuidado y asegurarte de que la condición del ciclo while cambie en algún momento, de otra forma, el ciclo no se detendrá nunca y sobrecargarás tu programa:
 
 ```java
-do {
-  // instrucciones
-} while (condición);
+while (isTurnOnLight) {
+  printSOS();
+}
 ```
 
-Los ciclos evaluarán si la condición se cumple y cuando deje de hacerlo no ejecutarán más el código del ciclo. Las instrucciones son las encargadas de que esta condición cambie de verdadero a falso. De otra forma, si las instrucciones nunca cambian la condición, el ciclo no se detendrá nunca, lo que conocemos como un ciclo infinito.
-
-La clase Scanner le permite a los usuarios contestar algunas preguntas para que nuestro programa actúe de una forma u otra. Para usarla solo debemos importar la clase Scanner de las APIs de desarrollo de Java:
+Los operadores ternarios son otra forma de evaluar condiciones, así como los condicionales IF y ELSE`:
 
 ```java
-import java.util.Scanner;
+// Operador Ternario:
+isTurnOnLight = (isTurnOnLight) ? false : true;
 
-int response = 0;
-
-Scanner sc = new Scanner(System.in);
-response = Integer.valueOf(sc.nextLine());
+// IF y ELSE:
+if (isTurnOnLight) {
+  isTurnOnLight = false;
+} else {
+  isTurnOnLight = true;  
+}
 ```
